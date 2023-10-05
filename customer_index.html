@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+
+    <style>
+        /*#box{*/
+        /*    background-color: #0a53be;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+
+<div id="box" >
+<div class="container">
+    <h1 id="customer">Manage Customer .</h1>
+    <div class="row">
+        <!--Form-->
+        <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+            <form>
+                <div class="mb-3">
+                    <label for="cus_id" class="form-label">Customer_id :</label>
+                    <input type="number" class="form-control" id="cus_id">
+                </div>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Customer_name :</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Enter your address" id="address" style="height: 100px"></textarea>
+                    <label for="address">Address</label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="salary" class="form-label">Salary :</label>
+                    <input type="text" class="form-control" id="salary">
+                </div>
+                <div class="mt-4">
+
+                    <button type="button" class="btn btn-warning">Save</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+
+                </div>
+            </form>
+        </div>
+        <!--Table-->
+        <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                     <td scope="row">1</td>
+                     <td>Niwanthi</td>
+                     <td>Dodangoda</td>
+                     <td>40000.00</td>
+                </tr>
+
+                <tr>
+                    <td scope="row">2</td>
+                    <td>Nethpali</td>
+                    <td>Kaluthara</td>
+                    <td>40000.00</td>
+                </tr>
+
+                <tr>
+                    <td scope="row">3</td>
+                    <td>Amil</td>
+                    <td>Habarana</td>
+                    <td>50000.00</td>
+                </tr>
+
+                <tr>
+                    <td scope="row">4</td>
+                    <td>Sandaru</td>
+                    <td>Baduraliya</td>
+                    <td>40000.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</div>
+<script src="assets/bootstrap-5.3.1-dist"></script>
+
+</body>
+</html>
