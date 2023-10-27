@@ -35,185 +35,91 @@
   </div>
 </nav>
 
+<div class="box" >
+<div class="manage_order">
+  <section class="sec01">
+    <form class="custom-form">
+      <div  class="navbar navbar-expand-sm navbar-dark bg-info-subtle" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Invoice Details</div>
+      <br>
+      <input type="text" class="form-control" id="idText" placeholder="order Id...">
 
-<!--<div class="container">-->
-<!--  <h1 id="place_order">Place Order</h1>-->
-<!--  <div class="row">-->
-<!--    &lt;!&ndash;Form&ndash;&gt;-->
-<!--    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">-->
-<!--      <form>-->
-<!--        <div class="mb-3">-->
-<!--          <label for="item_id" class="form-label">Item_Id</label>-->
-<!--          <input type="number" class="form-control" id="item_id">-->
-<!--        </div>-->
+      <input type="date" class="form-control" id="date" placeholder="date...">
 
-<!--        <div class="mb-3">-->
-<!--          <label for="quantity" class="form-label">Quantity</label>-->
-<!--          <input type="number" class="form-control" id="quantity">-->
-<!--        </div>-->
+      <input type="text" class="form-control" id="customer01" placeholder="customer...">
 
-<!--        <div class="mt-4">-->
-<!--          <button type="button" class="btn btn-success">Add</button>-->
-<!--        </div>-->
-<!--      </form>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;Table&ndash;&gt;-->
-<!--    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">-->
-<!--      <table class="table">-->
-<!--        <thead>-->
-<!--        <tr>-->
-<!--          <th scope="col">Item_Id</th>-->
-<!--          <th scope="col">Quantity</th>-->
-<!--          <th scope="col">Total</th>-->
-<!--        </tr>-->
-<!--        </thead>-->
-<!--        <tbody></tbody>-->
-<!--      </table>-->
-<!--      <p class="fs-2">Total : </p>-->
-
-<!--      <div class="input-group mb-3">-->
-<!--        <input type="text" class="form-control" placeholder="Amount" aria-label="Recipient's username" aria-describedby="basic-addon2">-->
-<!--        <div class="input-group-append">-->
-<!--          <button class="btn btn-outline-secondary" type="button">Calculate</button>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <p class="fs-2">Cash :</p>-->
-
-<!--      <div class="mt-4">-->
-<!--        <button type="button" class="btn btn-primary">Place Order</button>-->
-<!--      </div>-->
-
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<section id="order">
-  <h1 id="place-order">Place Order</h1>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="row">
-          <span>Invoice Details</span>
-        </div>
-        <div class="row" >
-          <div class="col-lg-12">
-            <form class="row g-3">
-              <div class="col-lg-6">
-                <label for="txtOrderId" class="form-label">Order ID :</label>
-                <input type="text" class="form-control" placeholder="O001" id="txtOrderId">
-              </div>
-              <div class="col-lg-6">
-                <label for="txtOrderDate" class="form-label">Date :</label>
-                <input type="text" class="form-control" placeholder="07/06/2020" id="txtOrderDate">
-              </div>
-              <div class="col-lg-6">
-                <label for="selectOrderCustomerId" class="form-label">Customer ID:</label>
-                <select id="selectOrderCustomerId" class="form-select"></select>
-              </div>
-              <div class="col-lg-6">
-                <label for="txtOrderCustomerNIC" class="form-label">Customer NIC :</label>
-                <input type="text" class="form-control" placeholder="200127103989" id="txtOrderCustomerNIC">
-              </div>
-              <div class="col-lg-6">
-                <label for="txtOrderCustomerName" class="form-label">Name :</label>
-                <input type="text" class="form-control" placeholder="Niwanthi" id="txtOrderCustomerName">
-              </div>
-              <div class="col-lg-6">
-                <label for="txtOrderCustomerSalary" class="form-label">Salary :</label>
-                <input type="number" class="form-control" placeholder="1000000.00" id="txtOrderCustomerSalary">
-              </div>
-              <div class="col-12" style="margin-bottom: 25px">
-                <label for="txtOrderCustomerAddress" class="form-label">Address :</label>
-                <input type="text" class="form-control" id="txtOrderCustomerAddress" placeholder="Kalutara">
-              </div>
-            </form>
-          </div>
-        </div>
+      <div class="mb-3 input-group-sm col-12">
+        <select class="form-select " aria-label="Default select example" id="cmbCustIDs" placeholder="Select Customer"></select>
       </div>
-      <div class="col-lg-5">
-        <div class="row">
-          <span>Item Select</span>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form class="row g-3 ">
-              <div class="col-lg-6">
-                <label for="selectOrderItemCode" class="form-label">Item Code :</label>
-                <select id="selectOrderItemCode" class="form-select"></select>
-              </div>
-              <div class="col-lg-6">
-                <label for="txtOrderItemDescription" class="form-label">Description :</label>
-                <input type="text" class="form-control" id="txtOrderItemDescription" placeholder="Keerisamba 5Kg">
-              </div>
-              <div class="col-lg-6">
-                <label for="txtOrderItemUnitPrice" class="form-label">Unit Price :</label>
-                <input type="number" class="form-control" id="txtOrderItemUnitPrice" placeholder="525.00">
-              </div>
-              <div class="col-lg-6">
-                <label for="txtOrderItemQtyOnHand" class="form-label">Qty On Hand :</label>
-                <input type="number" class="form-control" id="txtOrderItemQtyOnHand" placeholder="525.00">
-              </div>
-              <div class="col-lg-12">
-                <label for="txtOrderItemQty" class="form-label">Order Quantity :</label>
-                <input type="number" class="form-control" id="txtOrderItemQty" placeholder="2">
-              </div>
-              <div class="col-auto me-auto"></div>
-              <div class="col-auto" style="margin-top: 35px; margin-bottom: 25px">
-                <button type="button" id="btnAddToCartItem" class="justify-content-end btn btn-primary">Add to cart</button>
-              </div>
-            </form>
-          </div>
-        </div>
+
+      <input type="text" class="form-control" id="name01" placeholder="cust name...">
+
+      <input type="text" class="form-control" id="number" placeholder="number...">
+
+      <input type="text" class="form-control" id="address01" placeholder="address...">
+
+    </form>
+  </section>
+
+  <section class="sec02">
+    <form class="custom-form" id="custom-form2">
+      <div class="navbar navbar-expand-sm navbar-dark bg-info-subtle" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Item Select</div>
+      <br>
+
+      <div class="mb-3 input-group-sm col-12">
+        <select class="form-select " aria-label="Default select example" id="cmbItemIDs"></select>
       </div>
-      <div class="col-lg-3">
-        <form  class="row g-3 summery">
-          <div class="col-lg-12" style="color: #3498db;font-weight: bold; font-size: 22px">
-            Total :
-            <label id="lblTotal">0</label>
-            Rs/=
-          </div>
-          <div class="col-lg-12" style="color: #2ecc71;font-weight: bold; font-size: 22px">
-            SubTotal :
-            <label id="lblSubTotal">0</label>
-            Rs/=
-          </div>
-          <div class="col-lg-6">
-            <label for="txtCash" class="form-label">Cash :</label>
-            <input type="number" class="form-control" id="txtCash" placeholder="5000">
-          </div>
-          <div class="col-lg-6">
-            <label for="txtDiscount" class="form-label">Discount :</label>
-            <input type="number" class="form-control" id="txtDiscount" placeholder="10">
-          </div>
-          <div class="col-lg-12">
-            <label for="txtBalance" class="form-label">Balance :</label>
-            <input type="number" class="form-control" id="txtBalance" placeholder="10">
-          </div>
-          <div align="center" class="col-lg-12 center-block" style="margin-bottom: 30px">
-            <button type="button" id="btnOrderPurchase" style="font-weight: bold" class="btn btn-success">Purchase</button>
-          </div>
-        </form>
-      </div>
+
+      <input type="text" class="form-control" id="itemName" placeholder="item name...">
+
+      <input type="text" class="form-control" id="price01" placeholder="price...">
+
+      <input type="text" class="form-control" id="qtyOnHand" placeholder="qtyOnHand...">
+
+      <input type="text" class="form-control" id="qtyYouWant" placeholder="qty You Want...">
+
+      <button id="btn-addToCart" class="btn1 btn-success">Add Item</button>
+      <button id="Update" class="btn2 btn-success" onclick="addToCart()">Update</button>
+    </form>
+  </section>
+
+  <section class="sec03">
+    <form class="custom-form" id="custom-form3">
+      <br>
+      <h3 id="total">&nbsp;&nbsp;Total : <span>0</span> </h3>
+      <br>
+      <h3 id="subtotal">&nbsp;&nbsp;SubTotal : <span>0</span> </h3>
+      <br>
+      <input type="text" class="form-control" id="cash" placeholder="cash...">
+
+      <input type="text" class="form-control" id="discount" placeholder="discount(%)">
+      <br>
+      <br>
+      <input type="text" class="form-control" id="balance" placeholder="balance...">
+      <br><br>
+      <button type="submit" class="btn1 btn-success" id="btn-purchase-order">Purchase</button>
+    </form>
+  </section>
+
+  <section class="row mt-5">
+    <div class="col-10" id="table">
+      <table class="table table-success table-bordered" id="addToCartTable">
+        <thead>
+        <tr>
+          <th scope="col">Order Id</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Item Name</th>
+          <th scope="col">Item Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Total</th>
+          <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
-    <div class="col-lg-12">
-      <div class="my-custom-scrollbar table-wrapper-scroll-y" style="height: 132px">
-        <table class="table" style="background-color: #ffffff">
-          <thead class="table-dark">
-          <tr>
-            <th class="col-3">Item Code</th>
-            <th class="col-3">Item Name</th>
-            <th class="col-2">Price</th>
-            <th class="col-2">Quantity</th>
-            <th class="col-2">Total</th>
-          </tr>
-          </thead>
-          <tbody id="tblOrderCartBody" ></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
+</div>
 <script src="assets/bootstrap-5.3.1-dist"></script>
 <script src="assets/lib/jquery.min.js"></script>
 
