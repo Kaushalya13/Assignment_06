@@ -121,6 +121,20 @@ body{
     position: relative;
 }
 
+.sec01{
+    position: relative;
+    left: 40px;
+}
+
+.sec02{
+    position: relative;
+    left:40px;
+}
+
+.sec03{
+    position: relative;
+    left:40px;
+}
 .custom-form {
     width: 400px;
     height: 380px;
